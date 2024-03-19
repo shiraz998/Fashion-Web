@@ -1,0 +1,629 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/Inter-Bold.otf);
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../fonts/Inter-SemiBold.otf);
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url(../fonts/Inter-Medium.otf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/Inter-Regular.otf);
+}
+:root{
+    --black-color:#000000;
+    --green-color:#438565;
+    --light-color:#989898;
+    --white-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+.container-fluid{
+    width: 100%;
+}
+.container {
+    width: 1187px;
+    margin: 0 auto;
+}
+/* ---- Start Css Header ----> */
+header .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    padding: 20px 40px 0px 40px;
+}
+header .row .serach-bar input {
+    padding: 10px 20px 10px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Regular;
+    line-height: 24.2px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    border: 0.5px solid #d7d7d7;
+    color: #878787;
+}
+header .row .serach-bar a{
+    text-decoration: none;
+    position: absolute;
+    top: 34px;
+    left: 235px;
+}
+header .row .serach-bar a i{
+    font-size: 18px;
+    color: #878787;
+}
+header .row .serach-bar a img{
+    width: 18px;
+}
+header .row .site-logo{
+    display: flex;
+    justify-content: center;
+}
+header .row .site-logo a img{
+    max-width: 100%;
+    height: auto;
+}
+header .row .r-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 0px 5px;
+}
+header .row .nav-links{
+    grid-column: span 3;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid #a6a6a6;
+}
+header .row .nav-links ul{
+    list-style-type: none;
+    display: flex;
+    grid-gap: 50px;
+}
+header .row .nav-links ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #666666;
+    font-family: Inter-Regular;
+}
+header .row .nav-links ul li .l-home:link{
+    color: var(--green-color);
+}
+/* ---- Close Css Header ----> */
+/* ---- Start Css Hero Section ----> */
+.hero-section .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.hero-section .row .box .box-img img{
+    max-width: 100%;
+    height: auto;
+}
+.hero-section .row .box .box-content{
+    position: relative;
+}
+.hero-section .row .box .box-content h3{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41.15px;
+    font-family: Inter-SemiBold;
+    color: var(--white-color);
+    position: absolute;
+    top: -75px;
+    right: 38px;
+}
+/* ---- Close Css Hero Section ----> */
+/* ---- Start Css Section one----> */
+.section-one {
+    padding: 50px 0px 50px 0px;
+}
+.section-one .one-main {
+    display: flex;
+    justify-content: space-between;
+}
+.section-one .one-main .top-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.09px;
+    font-family: Inter-Bold;
+    color: var(--black-color);
+}
+.section-one .one-main .more-text {
+    display: flex;
+    grid-gap: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--green-color);
+}
+.section-one .one-main .more-text span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    font-family: Inter-SemiBold;
+    color: var(--green-color);
+}
+.section-one .one-main .more-text a{
+    text-decoration: none;
+}
+.section-one .one-main .more-text a i{
+    font-size: 20px;
+    color: var(--green-color);
+}
+.section-one .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px 50px;
+    padding-top: 30px;
+    justify-items: center;
+}
+.section-one .row .card {
+    border-radius: 16px;
+    border: 0.3px solid rgb(0, 0, 0, 20%);
+    padding: 15px;
+}
+.section-one .row .card .card-img{
+    position: relative;
+}
+.section-one .row .card .card-img img{
+    max-width: 100%;
+}
+.section-one .row .card .card-img span{
+    position: absolute;
+    top: -8px;
+    left: 292px;
+    background-color: #F88240;
+    color: var(--white-color);
+    padding: 3px 10px 3px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Medium;
+    line-height: 19.36px;
+    letter-spacing: 1px;
+    transform: skew(-16deg, 0deg);
+    border-radius: 2px;
+}
+.section-one .row .card .card-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}   
+.section-one .row .card .card-content .left-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter-Medium;
+    color: var(--black-color);
+}
+.section-one .row .card .card-content .left-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Regular;
+    color: var(--light-color);
+    padding-top: 5px;
+}
+.section-one .row .card .card-content .right-color img{
+    width: 18px;
+    height: auto;
+}
+.section-one .row .card .card-last{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-one .row .card .card-last h4{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Inter-SemiBold;
+    color: var(--black-color);
+}
+.section-one .row .card .card-last a {
+    background-color: var(--green-color);
+    border-radius: 100px;
+    padding: 10px;
+    text-decoration: none;
+}
+.section-one .row .card .card-last a i{
+    font-size: 20px;
+    color: white;
+}
+/* ---- Close Css Section One ----> */
+/* ---- Start Css Section Two ----> */
+.section-two {
+    padding: 20px 0px 20px 0px;
+}
+.section-two .row{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    box-shadow: 0px 4px 6px 0px #d4d4d4;
+    padding: 20px 0px 20px 0px;
+}
+/* ---- Close Css Section Two ----> */
+/* ---- Start Css Section Three ----> */
+.section-three {
+    padding: 50px 0px 50px 0px;
+}
+.section-three .three-main {
+    display: flex;
+    justify-content: space-between;
+}
+.section-three .three-main .top-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.09px;
+    font-family: Inter-Bold;
+    color: var(--black-color);
+}
+.section-three .three-main .more-text {
+    display: flex;
+    grid-gap: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--green-color);
+}
+.section-three .three-main .more-text span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    font-family: Inter-SemiBold;
+    color: var(--green-color);
+}
+.section-three .three-main .more-text a{
+    text-decoration: none;
+}
+.section-three .three-main .more-text a i{
+    font-size: 20px;
+    color: var(--green-color);
+}
+.section-three .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px 50px;
+    padding-top: 30px;
+    justify-items: center;
+}
+.section-three .row .card {
+    border-radius: 16px;
+    border: 0.3px solid rgb(0, 0, 0, 20%);
+    padding: 15px;
+}
+.section-three .row .card .card-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}   
+.section-three .row .card .card-content .left-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter-Medium;
+    color: var(--black-color);
+}
+.section-three .row .card .card-content .left-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Regular;
+    color: var(--light-color);
+    padding-top: 5px;
+}
+.section-three .row .card .card-content .right-color img{
+    width: 18px;
+    height: auto;
+}
+.section-three .row .card .card-last{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-three .row .card .card-last h4{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Inter-SemiBold;
+    color: var(--black-color);
+}
+.section-three .row .card .card-last a{
+    background-color: var(--green-color);
+    border-radius: 100px;
+    padding: 10px;
+    text-decoration: none;
+} 
+.section-three .row .card .card-last a i{
+    color: var(--white-color);
+    font-size: 20px;
+}
+/* ---- Close Css Section Three ----> */
+/* ---- Start Css Section Four ----> */
+.section-four {
+    padding: 50px 0px 50px 0px;
+    background-color: #FAFAFA;
+}
+.section-four .four-main {
+    display: flex;
+    justify-content: space-between;
+}
+.section-four .four-main .top-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.09px;
+    font-family: Inter-Bold;
+    color: var(--black-color);
+}
+.section-four .four-main .more-text {
+    display: flex;
+    grid-gap: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--green-color);
+}
+.section-four .four-main .more-text span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    font-family: Inter-SemiBold;
+    color: var(--green-color);
+}
+.section-four .four-main .more-text a{
+    text-decoration: none;
+}
+.section-four .four-main .more-text a i{
+    font-size: 20px;
+    color: var(--green-color);
+}
+.section-four .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px 50px;
+    padding-top: 30px;
+    justify-items: center;
+}
+.section-four .row .card {
+    border-radius: 16px;
+    border: 0.3px solid rgb(0, 0, 0, 20%);
+    padding: 15px;
+}
+.section-four .row .card .card-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}   
+.section-four .row .card .card-content .left-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter-Medium;
+    color: var(--black-color);
+}
+.section-four .row .card .card-content .left-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Regular;
+    color: var(--light-color);
+    padding-top: 5px;
+}
+.section-four .row .card .card-content .right-color img{
+    width: 18px;
+    height: auto;
+}
+.section-four .row .card .card-last{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-four .row .card .card-last h4{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Inter-SemiBold;
+    color: var(--black-color);
+}
+.section-four .row .card .card-last a{
+    background-color: var(--green-color);
+    border-radius: 100px;
+    padding: 10px;
+    text-decoration: none;
+}
+.section-four .row .card .card-last a i{
+    color: var(--white-color);
+    font-size: 20px;
+}
+/* ---- Close Css Section Four ----> */
+/* ---- Start Css Section Five ----> */
+.section-five {
+    padding: 50px 0px 50px 0px;
+}
+.section-five .five-main {
+    display: flex;
+    justify-content: space-between;
+}
+.section-five .five-main .top-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 58.09px;
+    font-family: Inter-Bold;
+    color: var(--black-color);
+}
+.section-five .five-main .more-text {
+    display: flex;
+    grid-gap: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--green-color);
+}
+.section-five .five-main .more-text span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    font-family: Inter-SemiBold;
+    color: var(--green-color);
+}
+.section-five .five-main .more-text a{
+    text-decoration: none;
+}
+.section-five .five-main .more-text a i{
+    font-size: 20px;
+    color: var(--green-color);
+}
+.section-five .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px 50px;
+    padding-top: 30px;
+    justify-items: center;
+}
+.section-five .row .card {
+    border-radius: 16px;
+    border: 0.3px solid rgb(0, 0, 0, 20%);
+    padding: 15px;
+}
+.section-five .row .card .card-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}   
+.section-five .row .card .card-content .left-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter-Medium;
+    color: var(--black-color);
+}
+.section-five .row .card .card-content .left-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter-Regular;
+    color: var(--light-color);
+    padding-top: 5px;
+}
+.section-five .row .card .card-content .right-color img{
+    width: 18px;
+    height: auto;
+}
+.section-five .row .card .card-last{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-five .row .card .card-last h4{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Inter-SemiBold;
+    color: var(--black-color);
+}
+.section-five .row .card .card-last a{
+    background-color: var(--green-color);
+    border-radius: 100px;
+    padding: 10px;
+    text-decoration: none;
+}
+.section-five .row .card .card-last a i{
+    font-size: 20px;
+    color: var(--white-color);
+}
+/* ---- Close Css Section Five ----> */
+/* ---- Start Css Section Six ----> */
+.section-six {
+    padding: 20px 0px 80px 0px;
+}
+.section-six .six-main h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.41px;
+    font-family: Inter-Bold;
+    color: var(--black-color);
+    text-align: center;
+    position: relative;
+}
+.section-six .six-main h2:before{
+    content: "";
+    display: block;
+    width: 102px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 410px;
+    background: var(--green-color);
+    border-radius: 6px;
+}
+.section-six .six-main h2:after{
+    content: "";
+    display: block;
+    width: 102px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    right: 410px;
+    background: var(--green-color);
+    border-radius: 6px;
+}
+.section-six .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px 8px;
+    padding: 50px 15px 50px 15px;
+    justify-items: center;
+    border: 1px solid var(--green-color);
+    border-radius: 24px;
+    margin-top: 70px;
+}
+/* ---- Close Css Section Six ----> */
+/* ---- Start Css Footer ----> */
+footer {
+    background-color: var(--green-color);
+    padding: 50px 0px 50px 0px;
+}
+footer .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+footer .row .box h3{
+    font-size: 18px ;
+    font-weight: 600;
+    line-height: 25.05px;
+    font-family: Inter-SemiBold;
+    color: var(--white-color);
+}
+footer .row .box ul {
+    list-style-type: none;
+    padding-top: 5px;
+}
+footer .row .box ul li{
+    padding-top: 5px;
+}
+footer .row .box ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.41px;
+    color: #d9e7e0;
+    font-family: Inter-Regular;
+}
+footer .row .box .social ul {
+    display: flex;
+    grid-gap: 0px 15px;
+    list-style-type: none;
+    justify-content: center;
+}
+footer .row .box .social ul li a{
+    font-size: 20px;
+    color: var(--white-color);
+}
+/* ---- Close Css Footer----> */
