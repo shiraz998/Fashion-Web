@@ -36,33 +36,35 @@
 header .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 16px 0px;
     align-items: center;
-    padding: 20px 40px 0px 40px;
+    padding: 28px 32px 0px 32px;
 }
-header .row .serach-bar input {
-    padding: 10px 20px 10px 10px;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: Inter-Regular;
-    line-height: 24.2px;
-    border-radius: 10px;
+header .row .serach-bar form {
+    display: flex; 
+    grid-gap: 0px 64px;
+    position: relative;
+}
+header .row .serach-bar form input {
+    width: 314px;
+    height: 64px;
     background-color: #f6f6f6;
-    border: 0.5px solid #d7d7d7;
-    color: #878787;
+    border: 0.5px solid rgba(0, 0, 0, 0.2); 
+    border-radius: 16px;
+    outline: none;
+    padding: 20px 28px 20px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    font-family: Inter-Regular;
 }
-header .row .serach-bar a{
-    text-decoration: none;
-    position: absolute;
-    top: 34px;
-    left: 235px;
-}
-header .row .serach-bar a i{
-    font-size: 18px;
-    color: #878787;
-}
-header .row .serach-bar a img{
-    width: 18px;
+header .row .serach-bar form .btn{
+    position:absolute;
+    top: 20px;
+    left: 263px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 header .row .site-logo{
     display: flex;
@@ -72,15 +74,16 @@ header .row .site-logo a img{
     max-width: 100%;
     height: auto;
 }
-header .row .r-icons {
+header .row .r-icons ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    grid-gap: 0px 5px;
+    grid-gap: 0px 8px;
+    list-style-type: none;
 }
 header .row .nav-links{
     grid-column: span 3;
-    padding: 20px 0px 20px 0px;
+    padding: 24px 0px 24px 0px;
     display: flex;
     justify-content: center;
     border-top: 0.5px solid #a6a6a6;
@@ -88,16 +91,17 @@ header .row .nav-links{
 header .row .nav-links ul{
     list-style-type: none;
     display: flex;
-    grid-gap: 50px;
+    grid-gap: 0px 75px;
 }
 header .row .nav-links ul li a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
+    line-height: 24.2px;
     color: #666666;
     font-family: Inter-Regular;
 }
-header .row .nav-links ul li .l-home:link{
+header .row .nav-links ul li .home:visited{
     color: var(--green-color);
 }
 /* ---- Close Css Header ----> */
@@ -114,7 +118,7 @@ header .row .nav-links ul li .l-home:link{
     position: relative;
 }
 .hero-section .row .box .box-content h3{
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 41.15px;
     font-family: Inter-SemiBold;
@@ -126,23 +130,26 @@ header .row .nav-links ul li .l-home:link{
 /* ---- Close Css Hero Section ----> */
 /* ---- Start Css Section one----> */
 .section-one {
-    padding: 50px 0px 50px 0px;
+    padding: 52px 0px 50px 0px;
 }
 .section-one .one-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section-one .one-main .top-text h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 58.09px;
     font-family: Inter-Bold;
     color: var(--black-color);
 }
 .section-one .one-main .more-text {
+    width: 123px;
+    height: 41px;
     display: flex;
     grid-gap: 0px 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 12px;
@@ -165,30 +172,30 @@ header .row .nav-links ul li .l-home:link{
 .section-one .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0px 50px;
-    padding-top: 30px;
+    grid-gap: 0px 56px;
+    padding-top: 40px;
     justify-items: center;
 }
 .section-one .row .card {
     border-radius: 16px;
     border: 0.3px solid rgb(0, 0, 0, 20%);
-    padding: 15px;
-}
-.section-one .row .card .card-img{
-    position: relative;
+    padding: 17px 17px 16px 17px;
 }
 .section-one .row .card .card-img img{
     max-width: 100%;
 }
-.section-one .row .card .card-img span{
+.section-one .row .card .top-new{
+    position: relative;
+}
+.section-one .row .card .top-new span{
     position: absolute;
     top: -8px;
     left: 292px;
     background-color: #F88240;
     color: var(--white-color);
     padding: 3px 10px 3px 10px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     font-family: Inter-Medium;
     line-height: 19.36px;
     letter-spacing: 1px;
@@ -198,20 +205,22 @@ header .row .nav-links ul li .l-home:link{
 .section-one .row .card .card-content{
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 4px;
 }   
 .section-one .row .card .card-content .left-text h4{
     font-size: 24px;
     font-weight: 500;
+    line-height: 29.05px;
     font-family: Inter-Medium;
     color: var(--black-color);
 }
 .section-one .row .card .card-content .left-text h5{
     font-size: 14px;
     font-weight: 400;
+    line-height: 16.94px;
     font-family: Inter-Regular;
-    color: var(--light-color);
-    padding-top: 5px;
+    color: darkgray;
+    padding-top: 4px;
 }
 .section-one .row .card .card-content .right-color img{
     width: 18px;
@@ -219,68 +228,72 @@ header .row .nav-links ul li .l-home:link{
 }
 .section-one .row .card .card-last{
     display: flex;
-    padding-top: 20px;
+    padding-top: 26px;
     align-items: center;
     justify-content: space-between;
 }
 .section-one .row .card .card-last h4{
     font-size: 22px;
     font-weight: 600;
+    line-height: 26.63px;
     font-family: Inter-SemiBold;
     color: var(--black-color);
 }
 .section-one .row .card .card-last a {
     background-color: var(--green-color);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 12px;
     text-decoration: none;
 }
 .section-one .row .card .card-last a i{
-    font-size: 20px;
+    font-size: 22px;
     color: white;
 }
 /* ---- Close Css Section One ----> */
 /* ---- Start Css Section Two ----> */
 .section-two {
-    padding: 20px 0px 20px 0px;
+    padding: 38px 0px 110px 0px;
 }
-.section-two .row{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    justify-items: center;
+.section-two .card-slider {
+    padding: 29px 0px 25px 28px;    
     box-shadow: 0px 4px 6px 0px #d4d4d4;
-    padding: 20px 0px 20px 0px;
+}
+.section-two .swiper-wrapper .swiper-slide {
+    margin-right: 0px;
 }
 /* ---- Close Css Section Two ----> */
 /* ---- Start Css Section Three ----> */
 .section-three {
-    padding: 50px 0px 50px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .section-three .three-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section-three .three-main .top-text h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 58.09px;
     font-family: Inter-Bold;
     color: var(--black-color);
 }
 .section-three .three-main .more-text {
+    width: 105px;
+    height: 41px;
     display: flex;
     grid-gap: 0px 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 12px;
-    border: 1px solid var(--green-color);
+    border: 0.5px solid var(--green-color);
 }
 .section-three .three-main .more-text span{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 16.94px;
-    font-family: Inter-SemiBold;
+    font-family: Inter-Medium;
     color: var(--green-color);
 }
 .section-three .three-main .more-text a{
@@ -293,32 +306,34 @@ header .row .nav-links ul li .l-home:link{
 .section-three .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0px 50px;
-    padding-top: 30px;
+    grid-gap: 0px 56px;
+    padding-top: 53px;
     justify-items: center;
 }
 .section-three .row .card {
     border-radius: 16px;
     border: 0.3px solid rgb(0, 0, 0, 20%);
-    padding: 15px;
+    padding: 17px 17px 16px 17px;
 }
 .section-three .row .card .card-content{
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 4px;
 }   
 .section-three .row .card .card-content .left-text h4{
     font-size: 24px;
     font-weight: 500;
+    line-height: 29.05px;
     font-family: Inter-Medium;
     color: var(--black-color);
 }
 .section-three .row .card .card-content .left-text h5{
     font-size: 14px;
     font-weight: 400;
+    line-height: 16.94px;
     font-family: Inter-Regular;
-    color: var(--light-color);
-    padding-top: 5px;
+    color: darkgray;
+    padding-top:4px;
 }
 .section-three .row .card .card-content .right-color img{
     width: 18px;
@@ -326,47 +341,51 @@ header .row .nav-links ul li .l-home:link{
 }
 .section-three .row .card .card-last{
     display: flex;
-    padding-top: 20px;
+    padding-top: 26px;
     align-items: center;
     justify-content: space-between;
 }
 .section-three .row .card .card-last h4{
     font-size: 22px;
     font-weight: 600;
+    line-height: 26.63px;
     font-family: Inter-SemiBold;
     color: var(--black-color);
 }
 .section-three .row .card .card-last a{
     background-color: var(--green-color);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 12px;
     text-decoration: none;
 } 
 .section-three .row .card .card-last a i{
     color: var(--white-color);
-    font-size: 20px;
+    font-size: 22px;
 }
 /* ---- Close Css Section Three ----> */
 /* ---- Start Css Section Four ----> */
 .section-four {
-    padding: 50px 0px 50px 0px;
+    padding: 88px 0px 110px 0px;
     background-color: #FAFAFA;
 }
 .section-four .four-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section-four .four-main .top-text h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 58.09px;
     font-family: Inter-Bold;
     color: var(--black-color);
 }
 .section-four .four-main .more-text {
+    width: 123px;
+    height: 41px;
     display: flex;
     grid-gap: 0px 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 12px;
@@ -389,32 +408,34 @@ header .row .nav-links ul li .l-home:link{
 .section-four .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0px 50px;
-    padding-top: 30px;
+    grid-gap: 0px 56px;
+    padding-top: 53px;
     justify-items: center;
 }
 .section-four .row .card {
     border-radius: 16px;
     border: 0.3px solid rgb(0, 0, 0, 20%);
-    padding: 15px;
+    padding: 17px 17px 16px 17px;
 }
 .section-four .row .card .card-content{
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 4px;
 }   
 .section-four .row .card .card-content .left-text h4{
     font-size: 24px;
     font-weight: 500;
+    line-height: 29.05px;
     font-family: Inter-Medium;
     color: var(--black-color);
 }
 .section-four .row .card .card-content .left-text h5{
     font-size: 14px;
     font-weight: 400;
+    line-height: 16.94px;
     font-family: Inter-Regular;
-    color: var(--light-color);
-    padding-top: 5px;
+    color: darkgray;
+    padding-top: 4px;
 }
 .section-four .row .card .card-content .right-color img{
     width: 18px;
@@ -422,46 +443,50 @@ header .row .nav-links ul li .l-home:link{
 }
 .section-four .row .card .card-last{
     display: flex;
-    padding-top: 20px;
+    padding-top: 26px;
     align-items: center;
     justify-content: space-between;
 }
 .section-four .row .card .card-last h4{
     font-size: 22px;
     font-weight: 600;
+    line-height: 26.63px;
     font-family: Inter-SemiBold;
     color: var(--black-color);
 }
 .section-four .row .card .card-last a{
     background-color: var(--green-color);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 12px;
     text-decoration: none;
 }
 .section-four .row .card .card-last a i{
     color: var(--white-color);
-    font-size: 20px;
+    font-size: 22px;
 }
 /* ---- Close Css Section Four ----> */
 /* ---- Start Css Section Five ----> */
 .section-five {
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 88px 0px;
 }
 .section-five .five-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section-five .five-main .top-text h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 58.09px;
     font-family: Inter-Bold;
     color: var(--black-color);
 }
 .section-five .five-main .more-text {
+    width: 123px;
+    height: 41px;
     display: flex;
     grid-gap: 0px 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 12px;
@@ -484,32 +509,34 @@ header .row .nav-links ul li .l-home:link{
 .section-five .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0px 50px;
-    padding-top: 30px;
+    grid-gap: 0px 56px;
+    padding-top: 53px;
     justify-items: center;
 }
 .section-five .row .card {
     border-radius: 16px;
     border: 0.3px solid rgb(0, 0, 0, 20%);
-    padding: 15px;
+    padding: 17px 17px 16px 17px;
 }
 .section-five .row .card .card-content{
     display: flex;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 4px;
 }   
 .section-five .row .card .card-content .left-text h4{
     font-size: 24px;
     font-weight: 500;
+    line-height: 29.05px;
     font-family: Inter-Medium;
     color: var(--black-color);
 }
 .section-five .row .card .card-content .left-text h5{
     font-size: 14px;
     font-weight: 400;
+    line-height: 16.94px;
     font-family: Inter-Regular;
-    color: var(--light-color);
-    padding-top: 5px;
+    color: darkgray;
+    padding-top: 4px;
 }
 .section-five .row .card .card-content .right-color img{
     width: 18px;
@@ -517,30 +544,34 @@ header .row .nav-links ul li .l-home:link{
 }
 .section-five .row .card .card-last{
     display: flex;
-    padding-top: 20px;
+    padding-top: 26px;
     align-items: center;
     justify-content: space-between;
 }
 .section-five .row .card .card-last h4{
     font-size: 22px;
     font-weight: 600;
+    line-height: 26.63px; 
     font-family: Inter-SemiBold;
     color: var(--black-color);
 }
 .section-five .row .card .card-last a{
     background-color: var(--green-color);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 12px;
     text-decoration: none;
 }
 .section-five .row .card .card-last a i{
-    font-size: 20px;
+    font-size: 22px;
     color: var(--white-color);
 }
 /* ---- Close Css Section Five ----> */
 /* ---- Start Css Section Six ----> */
 .section-six {
-    padding: 20px 0px 80px 0px;
+    padding: 0px 0px 108px 0px;
+}
+.section-six .six-main{
+    padding-bottom: 88px;
 }
 .section-six .six-main h2{
     font-size: 40px;
@@ -573,21 +604,42 @@ header .row .nav-links ul li .l-home:link{
     background: var(--green-color);
     border-radius: 6px;
 }
-.section-six .row{
+.section-six .swiper {
+    border-right: none;
+    border-left: 1px solid #438565;
+    border-bottom: 1px solid #438565;
+    border-top: 1px solid #438565;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.section-six .swiper-slide {
+    /* height: calc((100% - 30px) / 2) !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-six .swiper .slider-rows {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 40px 8px;
-    padding: 50px 15px 50px 15px;
-    justify-items: center;
-    border: 1px solid var(--green-color);
-    border-radius: 24px;
-    margin-top: 70px;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 53px 0px;
+    align-items: center;
+    padding: 84px 0px 83px 24px;
+}
+.section-six .swiper .swiper-button-next{
+    color: #438565;
+    width: 40px;
+    height: auto;
+}
+.section-six .swiper .swiper-button-prev{
+    color: #438565;
+    width: 40px;
+    height: auto;
 }
 /* ---- Close Css Section Six ----> */
 /* ---- Start Css Footer ----> */
 footer {
     background-color: var(--green-color);
-    padding: 50px 0px 50px 0px;
+    padding: 83px 114px 80px 80px;
 }
 footer .row{
     display: grid;
@@ -595,9 +647,9 @@ footer .row{
     justify-items: center;
 }
 footer .row .box h3{
-    font-size: 18px ;
+    font-size: 24px ;
     font-weight: 600;
-    line-height: 25.05px;
+    line-height: 29.05px;
     font-family: Inter-SemiBold;
     color: var(--white-color);
 }
@@ -606,14 +658,17 @@ footer .row .box ul {
     padding-top: 5px;
 }
 footer .row .box ul li{
-    padding-top: 5px;
+    padding-top: 10px;
+}
+footer .row .box .social ul li{
+    padding-top: 0px;
 }
 footer .row .box ul li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 400;
-    line-height: 22.41px;
-    color: #d9e7e0;
+    line-height: 25.41px;
+    color: rgba(255, 255, 255, 0.8);
     font-family: Inter-Regular;
 }
 footer .row .box .social ul {

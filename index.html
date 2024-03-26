@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Website</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <!--- Start Coding Header --->
@@ -14,21 +16,25 @@
     <div class="container-fluid">
         <div class="row">
             <div class="serach-bar">
-                <input type="search" name="" placeholder="Search something...">
-                <a href="#"><i class="ri-search-line"></i></a>
+                <form>
+                    <input type="search" name="" placeholder="Search something...">
+                    <button class="btn"><img src="./assets/images/Search.svg"></button>
+                </form>
             </div>
             <div class="site-logo">
                 <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
             </div>
             <div class="r-icons">
-                <a href="#"><img src="./assets/images/Icons 3.svg" alt="icon"></a>
-                <a href="#"><img src="./assets/images/Icons 1.svg" alt="icon"></a>
-                <a href="#"><img src="./assets/images/Icons4.svg" alt="icon"></a>
-                <a href="#"><img src="./assets/images/Icons 2.svg" alt="icon"></a>
+                <ul>
+                    <li><a href="#"><img src="./assets/images/Icons 3.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons 1.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons4.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons 2.svg" alt="icon"></a></li>
+                </ul>
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="home">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -45,7 +51,7 @@
         <div class="row">
             <div class="box">
                 <div class="box-img">
-                    <img src="./assets/images/Rectangle 1.png" alt="image">
+                   <a href=""><img src="./assets/images/Rectangle 1.png" alt="image"></a>
                 </div>
                 <div class="box-content">
                     <h3>Fog special</h3>
@@ -53,7 +59,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="./assets/images/Rectangle 2.png" alt="image">
+                    <a href=""><img src="./assets/images/Rectangle 2.png" alt="image"></a>
                 </div>
                 <div class="box-content">
                     <h3>Women</h3>
@@ -61,7 +67,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="./assets/images/Rectangle 3.png" alt="image">
+                    <a href=""><img src="./assets/images/Rectangle 3.png" alt="image"></a>
                 </div>
                 <div class="box-content">
                     <h3>Man</h3>
@@ -69,7 +75,7 @@
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="./assets/images/Rectangle 4.png" alt="image">
+                    <a href=""><img src="./assets/images/Rectangle 4.png" alt="image"></a>
                 </div>
                 <div class="box-content">
                     <h3>New</h3>
@@ -88,14 +94,16 @@
             </div>
             <div class="more-text">
                 <span>More</span>
-                <a href="#" class="m-icon"><i class="ri-arrow-right-fill"></i></a>
+                <a href="#"><i class="ri-arrow-right-fill"></i></a>
             </div>
         </div>
         <div class="row">
             <div class="card">
+                <div class="top-new">
+                    <span>New</span>
+                </div>
                 <div class="card-img">
                     <img src="./assets/images/Rectangle 8.png" alt="image">
-                    <span>New</span>
                 </div>
                 <div class="card-content">
                     <div class="left-text">
@@ -114,9 +122,11 @@
                 </div>
             </div>
             <div class="card">
+                <div class="top-new">
+                    <span>New</span>
+                </div>
                 <div class="card-img">
                     <img src="./assets/images/Rectangle 10.png" alt="image">
-                    <span>New</span>
                 </div>
                 <div class="card-content">
                     <div class="left-text">
@@ -135,9 +145,11 @@
                 </div>
             </div>
             <div class="card">
+                <div class="top-new">
+                    <span>New</span>
+                </div>
                 <div class="card-img">
                     <img src="./assets/images/Rectangle 12.png" alt="image">
-                    <span>New</span>
                 </div>
                 <div class="card-content">
                     <div class="left-text">
@@ -162,14 +174,44 @@
 <!--- Start Coding Section Two--->
 <section class="section-two">
     <div class="container-fluid">
-        <div class="row">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
-            <img src="./assets/images/Group 21.png" alt="image">
+        <div class="swiper card-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="./assets/images/Group 21.png" alt="image">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -183,7 +225,7 @@
             </div>
             <div class="more-text">
                 <span>More</span>
-                <a href="#" class="m-icon"><i class="ri-arrow-right-fill"></i></a>
+                <a href="#"><i class="ri-arrow-right-fill"></i></a>
             </div>
         </div>
         <div class="row">
@@ -260,7 +302,7 @@
             </div>
             <div class="more-text">
                 <span>More</span>
-                <a href="#" class="m-icon"><i class="ri-arrow-right-fill"></i></a>
+                <a href="#"><i class="ri-arrow-right-fill"></i></a>
             </div>
         </div>
         <div class="row">
@@ -337,7 +379,7 @@
             </div>
             <div class="more-text">
                 <span>More</span>
-                <a href="#" class="m-icon"><i class="ri-arrow-right-fill"></i></a>
+                <a href="#"><i class="ri-arrow-right-fill"></i></a>
             </div>
         </div>
         <div class="row">
@@ -411,15 +453,41 @@
         <div class="six-main">
             <h2>More Products</h2>
         </div>
-        <div class="row">
-            <img src="./assets/images/Rectangle 29.png" alt="image">
-            <img src="./assets/images/Rectangle 30.png" alt="image">
-            <img src="./assets/images/Rectangle 31.png" alt="image">
-            <img src="./assets/images/Rectangle 32.png" alt="image">
-            <img src="./assets/images/Rectangle 33.png" alt="image">
-            <img src="./assets/images/Rectangle 34.png" alt="image">
-            <img src="./assets/images/Rectangle 35.png" alt="image">
-            <img src="./assets/images/Rectangle 36.png" alt="image">
+        <div class="swiper slider-grids">
+            <div class="swiper-wrapper slider-rows">
+                <div class="swiper-slide">
+                     <img src="./assets/images/Rectangle 29.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 30.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 31.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 32.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 37.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 33.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 34.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 35.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 36.png" alt="image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/Rectangle 38.png" alt="image">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
@@ -454,7 +522,7 @@
             </div>
             <div class="box">
                 <div class="f-logo">
-                    <img src="./assets/images/f-logo.png" alt="f-logo">
+                    <a href="#"><img src="./assets/images/f-logo.png" alt="f-logo"></a>
                 </div>
                 <div class="social">
                     <ul>
@@ -468,5 +536,9 @@
     </div>    
 </footer>
 <!--- Close Coding Footer--->  
+<!--- Start Js Script--->  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/javascript.js"></script>
+<!--- CLose Js Script--->  
 </body>
 </html>
