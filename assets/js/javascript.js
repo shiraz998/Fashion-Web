@@ -39,9 +39,7 @@ var swiper = new Swiper(".card-slider", {
 var swiper = new Swiper(".slider-grids", {
     slidesPerView: 4,
     loop: true,
-    grid: {
-      rows: 1,
-    },
+  
    // spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
@@ -78,7 +76,6 @@ var swiper = new Swiper(".slider-grids", {
 
 var swiper = new Swiper(".drop-slider", {
     slidesPerView: 3,
-    centeredSlides: true,
     spaceBetween: 0,
     loop: true,
     navigation: {
