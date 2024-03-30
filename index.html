@@ -18,7 +18,7 @@
             <div class="serach-bar">
                 <form>
                     <input type="search" name="" placeholder="Search something...">
-                    <button class="btn"><img src="./assets/images/Search.svg"></button>
+                    <button type="submit" class="btn"><img src="./assets/images/Search.svg"></button>
                 </form>
             </div>
             <div class="site-logo">
@@ -66,7 +66,15 @@
                                     </ul>
                                 </div>
                                 <div class="dropmenu-slider">
-                                    <h3>Specials</h3>
+                                    <div class="right-top">
+                                        <div>
+                                            <h3>Specials</h3>
+                                        </div>
+                                        <div class="arrows-sliders">
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
                                     <div #swiperRef="" class="swiper drop-slider">
                                         <div class="swiper-wrapper news-wrappers">
                                             <div class="swiper-slide">
@@ -82,38 +90,51 @@
                                                 <img src="./assets/images/StripedCap-SleevePolo_2_280x.jpg" alt="image">Paint-Splatter
                                             </div>
                                         </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
+                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="right">
-                                <div class="img-one">
+                                <a href="#" class="img-one">
                                     <h4>SUMMER <span>2019</span></h4>
                                     <h3>NEW ARRIVALS</h3>
-                                </div>
-                                <div class="img-two">
+                                </a>
+                                <a href="#" class="img-two">
                                     <h4>CLEARANCE SALES</h4>
                                     <h3>GET UP TO 20% OFF</h3>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="link-products">
                         <a href="#">Products <i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-two">
                             <ul>
-                                <li><a href="#">Shirt <i class="fas fa-caret-right"></i></a>
+                                <li class="li-shirt"><a href="#">Shirt <i class="fas fa-caret-right"></i></a>
                                     <div class="dropdown-three">
                                         <ul>
                                             <li><a href="#">Shirt</a></li>
                                             <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Jeans <i class="fas fa-caret-right"></i></a>
+                                                <div class="dropdown-four">
+                                                    <ul>
+                                                        <li><a href="#">Shirt</a></li>
+                                                        <li><a href="#">T-Shirt</a></li>
+                                                        <li><a href="#">Jeans</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">watch</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li><a href="#">T-Shirt</a></li>
                                 <li><a href="#">Jeans</a></li>
                                 <li><a href="#">Shoes</a></li>
+                                <li><a href="#">watch</a></li>
+                                <li><a href="#">Dress</a></li>
                             </ul>
                         </div>
                     </li>
@@ -523,38 +544,28 @@
 <section class="section-six">
     <div class="container-fluid">
         <div class="six-main">
-            <h2>More Products</h2>
+            <h2><span>More Products</span></h2>
         </div>
         <div class="swiper slider-grids">
             <div class="swiper-wrapper slider-rows">
-                <div class="swiper-slide">
-                     <img src="./assets/images/Rectangle 29.png" alt="image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/Rectangle 30.png" alt="image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/Rectangle 31.png" alt="image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/Rectangle 32.png" alt="image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/Rectangle 37.png" alt="image">
-                </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperss-one">
+                    <img src="./assets/images/Rectangle 29.png" alt="image">
                     <img src="./assets/images/Rectangle 33.png" alt="image">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperss-one">
+                    <img src="./assets/images/Rectangle 30.png" alt="image">
                     <img src="./assets/images/Rectangle 34.png" alt="image">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperss-one">
+                    <img src="./assets/images/Rectangle 31.png" alt="image">
                     <img src="./assets/images/Rectangle 35.png" alt="image">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperss-one">
+                    <img src="./assets/images/Rectangle 32.png" alt="image">
                     <img src="./assets/images/Rectangle 36.png" alt="image">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperss-one">
+                    <img src="./assets/images/Rectangle 37.png" alt="image">
                     <img src="./assets/images/Rectangle 38.png" alt="image">
                 </div>
             </div>

@@ -6,10 +6,6 @@ var swiper = new Swiper(".card-slider", {
     autoplay: {
     delay: 2000,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     breakpoints: {
     320: {
         slidesPerView: 1,
@@ -34,17 +30,10 @@ var swiper = new Swiper(".card-slider", {
     },
 });
 /// Close Swiper Logo ///
-
 /// Start  Swiper Gallery ///
 var swiper = new Swiper(".slider-grids", {
     slidesPerView: 4,
     loop: true,
-  
-   // spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -68,18 +57,18 @@ var swiper = new Swiper(".slider-grids", {
       },
       1300: {
           slidesPerView: 4,
-          spaceBetween: 140,
+          spaceBetween: 40,
       },
       },
 });
 /// Close Swiper Gallery ///
-
+/// Open Dropdown Slider ///
 var swiper = new Swiper(".drop-slider", {
     slidesPerView: 3,
-    spaceBetween: 0,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
+/// Close Dropdown Slider ///

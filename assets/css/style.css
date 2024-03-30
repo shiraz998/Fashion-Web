@@ -95,7 +95,7 @@ header .row .nav-links ul{
     display: flex;
     grid-gap: 0px 75px;
 }
-header .row .nav-links ul li{
+header .row .nav-links ul > li{
     padding-top: 10px;
 }
 header .row .nav-links ul li a{
@@ -199,6 +199,22 @@ header .row .nav-links ul li .dropdown .left .box1 ul li a:hover{
     max-width: 130px;
     height: auto;
 }
+.dropdown .left .dropmenu-slider .right-top {
+    display: flex;
+    position: relative;
+}
+.dropdown .left .dropmenu-slider .right-top .swiper-button-prev::after{
+    content: 'prev';
+    font-size: 25px;
+    position: absolute;
+    left: 420px;
+    color: #438565;
+}
+.dropdown .left .dropmenu-slider .right-top .swiper-button-next::after{
+    content: 'next';
+    font-size: 25px;
+    color: #438565;
+}
 .nav-links ul li .dropdown .right{
     display: flex;
     grid-gap: 0px 20px;
@@ -272,38 +288,39 @@ header .row .nav-links ul li .dropdown .left .box1 ul li a:hover{
 /* ---- Header Dropdown Two ----> */
 header .row .nav-links ul li .dropdown-two{
     position: absolute;
-    top: 55px;
-    z-index: 999;
-    padding: 10px;
+    top: 50px;
     display: none;
     width: 150px;
     background: #fff;
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+    padding: 0px 0px 10px 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
 }
 header .row .nav-links ul li .dropdown-two:hover{
-    display: none;
+    display: block;
 }
 header .row .nav-links ul li:hover .dropdown-two{
-    display: none;
+    display: block;
 }
 header .row .nav-links ul li .dropdown-two ul{
     display: block;
 }
 header .row .nav-links ul li .dropdown-two ul li{
-    padding-top: 5px;
+    padding-top: 10px;
 }
 header .row .nav-links ul li .dropdown-two ul li a{
     text-decoration: none;
     font-size: 15px;
-    color: #191919;
+    color:  #777777;
 }
 header .row .nav-links ul li .dropdown-two ul li a:hover{
     color: #2879fe;
 }
+header .row .nav-links ul li .dropdown-two ul .li-shirt i{
+    padding-left: 80px;
+}
 /* ---- Header Dropdown Two ----> */
 /* ---- Header Dropdown Three ----> */
-header .row .nav-links ul li .dropdown-two .dropdown-three{
+.dropdown-two ul li .dropdown-three{
     position: absolute;
     top: 0;
     left: 151px;
@@ -311,19 +328,39 @@ header .row .nav-links ul li .dropdown-two .dropdown-three{
     display: none;
     width: 150px;
     background: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 0px 10px 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
 }
-header .row .nav-links ul li .dropdown-two .dropdown-three:hover{
+.dropdown-two ul li.dropdown-three:hover{
     display: block;
 }
-header .row .nav-links ul li .dropdown-two ul li:hover.dropdown-three{
+.dropdown-two ul li:hover .dropdown-three{
     display: block;
 }
-header .row .nav-links ul li .dropdown-two .dropdown-three ul li{
+.dropdown-two .dropdown-three ul li{
     padding-top: 5px;
 }
 /* ---- Header Dropdown Three ----> */
+.dropdown-three ul li .dropdown-four{
+    position: absolute;
+    top: 68px;
+    left: 150px;
+    z-index: 999;
+    display: none;
+    width: 150px;
+    background: #fff;
+    padding: 0px 0px 10px 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+.dropdown-three ul li.dropdown-four:hover{
+    display: block;
+}
+.dropdown-three ul li:hover .dropdown-four{
+    display: block;
+}
+.dropdown-three .dropdown-four ul li{
+    padding-top: 5px;
+}
 /* ---- Close Css Header ----> */
 /* ---- Start Css Hero Section ----> */
 .hero-section .row{
@@ -671,7 +708,7 @@ header .row .nav-links ul li .dropdown-two .dropdown-three ul li{
 /* ---- Close Css Section Four ----> */
 /* ---- Start Css Section Five ----> */
 .section-five {
-    padding: 80px 0px 88px 0px;
+    padding: 80px 0px 89px 0px;
 }
 .section-five .top-text{
     display: flex;
@@ -772,7 +809,7 @@ header .row .nav-links ul li .dropdown-two .dropdown-three ul li{
     padding: 0px 0px 108px 0px;
 }
 .section-six .six-main{
-    padding-bottom: 88px;
+    padding-bottom: 87px;
 }
 .section-six .six-main h2{
     font-size: 40px;
@@ -781,30 +818,34 @@ header .row .nav-links ul li .dropdown-two .dropdown-three ul li{
     font-family: Inter-Bold;
     color: var(--black-color);
     text-align: center;
+}
+.section-six .six-main h2{
     position: relative;
 }
-.section-six .six-main h2:before{
+.section-six .six-main h2 span:before{
     content: "";
     display: block;
-    width: 102px;
     height: 4px;
+    width: 180px;
     position: absolute;
+    margin: auto;
     top: 50%;
-    left: 410px;
+    left: 335px;
     background: var(--green-color);
     border-radius: 6px;
 }
-.section-six .six-main h2:after{
+.section-six .six-main h2 span:after{
     content: "";
     display: block;
-    width: 102px;
     height: 4px;
+    width: 180px;
+    margin: auto;
     position: absolute;
     top: 50%;
-    right: 410px;
+    right: 335px;
     background: var(--green-color);
     border-radius: 6px;
-}
+} 
 .section-six .swiper {
     border-right: none;
     border-left: 1px solid #438565;
@@ -813,19 +854,10 @@ header .row .nav-links ul li .dropdown-two .dropdown-three ul li{
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
 }
-.section-six .swiper-slide {
-    /* height: calc((100% - 30px) / 2) !important; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .section-six .swiper .slider-rows {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 53px 0px;
-    align-items: center;
+    display: flex;
     padding: 84px 0px 83px 24px;
-}
+} 
 .section-six .swiper .swiper-button-next{
     color: #438565;
     width: 40px;
