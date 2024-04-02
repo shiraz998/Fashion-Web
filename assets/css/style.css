@@ -84,7 +84,7 @@ header .row .r-icons ul{
 }
 header .row .nav-links{
     grid-column: span 3;
-    padding: 14px 0px 24px 0px;
+    padding: 13px 0px 24px 0px;
     display: flex;
     justify-content: center;
     border-top: 0.5px solid #a6a6a6;
@@ -117,7 +117,7 @@ header .row .nav-links ul li .home:visited{
 header .row .nav-links ul li .dropdown{
     position: absolute;
     width: 100%;
-    top: 52px;
+    top: 50px;
     left: 0;
     z-index: 999;
     background: #fff;
@@ -288,7 +288,7 @@ header .row .nav-links ul li .dropdown .left .box1 ul li a:hover{
 /* ---- Header Dropdown Two ----> */
 header .row .nav-links ul li .dropdown-two{
     position: absolute;
-    top: 50px;
+    top: 48px;
     display: none;
     width: 150px;
     background: #fff;
@@ -305,7 +305,7 @@ header .row .nav-links ul li .dropdown-two ul{
     display: block;
 }
 header .row .nav-links ul li .dropdown-two ul li{
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 header .row .nav-links ul li .dropdown-two ul li a{
     text-decoration: none;
@@ -323,13 +323,21 @@ header .row .nav-links ul li .dropdown-two ul .li-shirt i{
 .dropdown-two ul li .dropdown-three{
     position: absolute;
     top: 0;
-    left: 151px;
+    left: 150px;
     z-index: 999;
     display: none;
     width: 150px;
     background: #fff;
-    padding: 0px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+.dropdown-two ul li .dropdown-three h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+    line-height: 24px;
+    font-family: Inter-Medium;
+    text-transform: uppercase;
 }
 .dropdown-two ul li.dropdown-three:hover{
     display: block;
@@ -343,7 +351,7 @@ header .row .nav-links ul li .dropdown-two ul .li-shirt i{
 /* ---- Header Dropdown Three ----> */
 .dropdown-three ul li .dropdown-four{
     position: absolute;
-    top: 68px;
+    top: 130px;
     left: 150px;
     z-index: 999;
     display: none;
@@ -806,7 +814,7 @@ header .row .nav-links ul li .dropdown-two ul .li-shirt i{
 /* ---- Close Css Section Five ----> */
 /* ---- Start Css Section Six ----> */
 .section-six {
-    padding: 0px 0px 108px 0px;
+    padding: 0px 0px 107px 0px;
 }
 .section-six .six-main{
     padding-bottom: 87px;
@@ -818,46 +826,45 @@ header .row .nav-links ul li .dropdown-two ul .li-shirt i{
     font-family: Inter-Bold;
     color: var(--black-color);
     text-align: center;
-}
-.section-six .six-main h2{
     position: relative;
 }
-.section-six .six-main h2 span:before{
-    content: "";
-    display: block;
-    height: 4px;
-    width: 180px;
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 335px;
-    background: var(--green-color);
-    border-radius: 6px;
+.section-six .six-main h2 span{
+    position: relative;
+    background-color: #fff;
+    padding: 0px 20px;
 }
-.section-six .six-main h2 span:after{
+.section-six .six-main h2:before{
     content: "";
     display: block;
     height: 4px;
-    width: 180px;
-    margin: auto;
+    width: 50%;
     position: absolute;
+    margin: auto;
     top: 50%;
-    right: 335px;
+    left: 50%;
     background: var(--green-color);
     border-radius: 6px;
-} 
+    transform: translate(-50%, -50%);
+}
 .section-six .swiper {
     border-right: none;
-    border-left: 1px solid #438565;
-    border-bottom: 1px solid #438565;
-    border-top: 1px solid #438565;
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
+    border: 1px solid #438565;
+    border-radius: 24px;
 }
 .section-six .swiper .slider-rows {
     display: flex;
-    padding: 84px 0px 83px 24px;
+    padding: 84px 0px 78px 24px;
+    grid-gap: 18px;
 } 
+.section-six .slider-grids .slider-rows .swiperss-one {
+    margin-right: 0px !important;
+} 
+.section-six .swiper .swiper-wrapper .swiperss-one img{
+    width: 100%;
+}
+.section-six .swiper .swiper-wrapper .swiperss-one img:first-child{
+    padding-bottom: 54px;
+}
 .section-six .swiper .swiper-button-next{
     color: #438565;
     width: 40px;
@@ -885,13 +892,14 @@ footer .row .box h3{
     line-height: 29.05px;
     font-family: Inter-SemiBold;
     color: var(--white-color);
+    padding-bottom: 5px;
 }
 footer .row .box ul {
     list-style-type: none;
     padding-top: 5px;
 }
 footer .row .box ul li{
-    padding-top: 10px;
+    padding-bottom: 8px;
 }
 footer .row .box .social ul li{
     padding-top: 0px;
