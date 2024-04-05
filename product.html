@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<!--- Start Coding Header --->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="serach-bar">
+                <form>
+                    <input type="search" name="" placeholder="Search something...">
+                    <button type="submit" class="btn"><img src="./assets/images/Search.svg"></button>
+                </form>
+            </div>
+            <div class="site-logo">
+                <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+            </div>
+            <div class="r-icons">
+                <ul>
+                    <li><a href="#"><img src="./assets/images/Icons 3.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons 1.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons4.svg" alt="icon"></a></li>
+                    <li><a href="#"><img src="./assets/images/Icons 2.svg" alt="icon"></a></li>
+                </ul>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#">Shop <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <div class="left">
+                                <div class="box1">
+                                    <h3>Men</h3>
+                                    <ul>
+                                        <li><a href="#">Shirt</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">Jeans </li>
+                                        <li><a href="#">Shoes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box1">
+                                    <h3>Women</h3>
+                                    <ul>
+                                        <li><a href="#">Shirt</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="box1">
+                                    <h3>Kids</h3>
+                                    <ul>
+                                        <li><a href="#">Shirt</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropmenu-slider">
+                                    <div class="right-top">
+                                        <div>
+                                            <h3>Specials</h3>
+                                        </div>
+                                        <div class="arrows-sliders">
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                    <div #swiperRef="" class="swiper drop-slider">
+                                        <div class="swiper-wrapper news-wrappers">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/Paint-SplatterFleecePullover_280x.jpg" alt="image">Paint-Splatter
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/PinkPonyLeatherSneaker_280x.jpg" alt="image">Paint-Splatter
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/Two-ToneSleevelessDress_280x.jpg" alt="image">Paint-Splatter
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/StripedCap-SleevePolo_2_280x.jpg" alt="image">Paint-Splatter
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="img-one">
+                                    <h4>SUMMER <span>2019</span></h4>
+                                    <h3>NEW ARRIVALS</h3>
+                                </a>
+                                <a href="#" class="img-two">
+                                    <h4>CLEARANCE SALES</h4>
+                                    <h3>GET UP TO 20% OFF</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="link-products">
+                        <a href="#">Products <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-two">
+                            <ul>
+                                <li class="li-shirt"><a href="#">Shirt <i class="fas fa-caret-right"></i></a>
+                                    <div class="dropdown-three">
+                                        <h3>Men</h3>
+                                        <ul>
+                                            <li><a href="#">Shirt</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Jeans <i class="fas fa-caret-right"></i></a>
+                                                <div class="dropdown-four">
+                                                    <ul>
+                                                        <li><a href="#">Shirt</a></li>
+                                                        <li><a href="#">T-Shirt</a></li>
+                                                        <li><a href="#">watch</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">watch</a></li>
+                                <li><a href="#">Dress</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Discounts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--- Close Coding Header --->
+<!--- Start Coding product-page --->
+<section class="product-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-side">
+                <div class="swiper mySwiper2 thumb-slider2">
+                    <div class="swiper-wrapper  ">
+                        <div class="swiper-slide slides-two">
+                            <img src="./assets/images/pics1.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pics2.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pics3.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/pics4.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pics5.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/pics6.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/pics7.png" alt="image"/>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper thumb-slider">
+                    <div class="swiper-wrapper wrapper3">
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics1.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics2.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics3.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics4.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics5.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics6.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics7.png" alt="image"/>
+                        </div>
+                        <div class="swiper-slide slider-threes">
+                            <img src="./assets/images/pics1.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="top-heading">
+                    <h2>Epaulette shirt</h2>
+                </div>
+                <div class="rev-star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="prices">
+                    <p class="dis-price"><del>$74.00</del></p>
+                    <p class="real-price">$70.00</p>
+                </div>
+                <div class="b-text">
+                    <p>Vendor : <span>Aveda</span></p>
+                    <p>Product Type : <span>fashion</span></p>
+                </div>
+                <div class="b-wishlist">
+                    <div class="add-wish">
+                        <a href="#"><i class="fas fa-heart"></i><span>Add to wishlist</span></a>
+                    </div>
+                    <div class="charts">
+                        <a href="#"><i class="ri-bar-chart-box-line"></i><span>Sizechart</span></a>
+                    </div>
+                </div>
+                <div class="b-progressbar">
+                    <span></span>
+                </div>
+                <div class="about-p">
+                    <h4>Size</h4>
+                    <div class="product-sizes">
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                    </div>
+                    <h4>Quantity</h4>
+                </div>
+                <div class="increment-btns">
+                    <span class="minus">-</span>
+                    <span class="num">0</span>
+                    <span class="plus">+</span>
+                </div>
+                
+                <div class="btnss">
+                    <a href="#">Add to cart</a>
+                    <a href="#">Buy it now</a>
+                </div>
+                <div class="row">
+                        <div class="left-one">
+                            <div class="img-one">
+                                <img src="./assets/images/boxsss.png" alt="image">
+                            </div>
+                            <div class="img-texts">
+                                <h4>Free Delivery</h4>
+                                <p>Lorem Ipsum dummy</p>
+                            </div>
+                        </div>
+                        <div class="left-one">
+                            <div class="img-one">
+                                <img src="./assets/images/dollers.png" alt="image">
+                            </div>
+                            <div class="img-texts">
+                                <h4>Big Savings</h4>
+                                <p>Lorem Ipsum dummy</p>
+                            </div>
+                        </div>
+                        <div class="left-one">
+                            <div class="img-one">
+                                <img src="./assets/images/userss.png" alt="image">
+                            </div>
+                            <div class="img-texts">
+                                <h4>Customer Support</h4>
+                                <p>Lorem Ipsum dummy</p>
+                            </div>
+                        </div>
+                        <div class="left-one">
+                            <div class="img-one">
+                                <img src="./assets/images/serviceicon4.png" alt="image">
+                            </div>
+                            <div class="img-texts">
+                                <h4>Gift Voucher</h4>
+                                <p>Lorem Ipsum dummy</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="last-logos">
+                    <img src="./assets/images/all logos.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- Close Coding product-page --->
+<!--- Start Coding product-Tabs --->
+<section class="product-tabss">
+    <div class="container">
+        <div class="tab-area">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Description')" id="defaultOpen">Description</button>
+                <button class="tablinks" onclick="openCity(event, 'Revtab')">REVIEW TAB</button>
+                <button class="tablinks" onclick="openCity(event, 'Shipping')">Shipping & Returns</button>
+                <button class="tablinks" onclick="openCity(event, 'CustomTab')">Custom Tab1</button>
+            </div>
+            <div id="Description" class="tabcontent">
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy 
+                    material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!
+                </p>
+                <div class="simple-one">
+                    <h4>Sample Unordered List</h4>
+                    <ul>
+                        <li>Comodous in tempor ullamcorper miaculis</li>
+                        <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                        <li>Divamus sit amet purus justo.</li>
+                        <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+                    </ul>
+                </div>
+                <div class="simple-one">
+                    <h4>Sample Ordered Lista</h4>
+                    <ol>
+                        <li>Comodous in tempor ullamcorper miaculis</li>
+                        <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                        <li>Divamus sit amet purus justo.</li>
+                        <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+                    </ol>
+                </div>
+                <div class="simple-one">
+                    <h4>Sample Paragraph Text</h4>
+                    <blockquote>
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit.
+                            Accessorize with a straw hat and you're ready for summer!Faded short sleeves t-shirt with high neckline.
+                            Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summe!
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div id="Revtab" class="tabcontent">
+                <div class="simple-one">
+                    <p>
+                        This is a custom product tab. You can set different content for tabs for each product. 
+                        You can add content of the tabs in the admin on product configuration page.
+                    </p>
+                </div>
+            </div>
+            <div id="Shipping" class="tabcontent">
+                <div class="simple-one">
+                    <h4>Returns Policy</h4>
+                    <p>
+                        You may return most new, unopened items within 30 days of delivery for a full refund.
+                        We'll also pay the return shipping costs if the return is a result of our 
+                        error (you received an incorrect or defective item, etc.).
+                    </p>
+                    <p>
+                        You should expect to receive your refund within four weeks of giving your package to the 
+                        return shipper, however, in many cases you will receive a refund more quickly. This time
+                        period includes the transit time for us to receive your return from the shipper 
+                        (5 to 10 business days), the time it takes us to process your return once we receive it 
+                        (3 to 5 business days), and the time it takes your bank to process our refund request 
+                        (5 to 10 business days).
+                    </p>
+                    <p>
+                        If you need to return an item, simply login to your account, view the order using the 'Complete Orders'
+                        link under the My Account menu and click the Return Item button. We'll notify you via e-mail of your 
+                        refund once we've received and processed the returned item.
+                    </p>
+                    <h4>Shipping</h4>
+                    <p>
+                        We can ship to virtually any address in the world. Note that there are restrictions on some products,
+                       and some products cannot be shipped to international destinations.
+                    </p>
+                    <p>
+                        When you place an order, we will estimate shipping and delivery dates for you based on the availability
+                        of your items and the shipping options you choose. Depending on the shipping provider you choose, 
+                        shipping date estimates may appear on the shipping quotes page.
+                    </p>
+                    <p>
+                        Please also note that the shipping rates for many items we sell are weight-based. The weight of any such
+                        item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will
+                        be rounded up to the next full pound.
+                    </p>
+                </div> 
+            </div>
+            <div id="CustomTab" class="tabcontent">
+                <div class="simple-one">
+                    <p>
+                        This is a custom product tab. You can set different content for tabs for each product. 
+                        You can add content of the tabs in the admin on product configuration page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- Close Coding product-Tabs --->
+<!--- Start Coding P-Page Last Slider --->
+<section class="p-page-slider">
+    <div class="container">
+        <div class="last-slider">
+            <div class="top-test">
+                <h3>You May Also Like</h3>
+            </div>
+            <div class="swiper mySwiper p-pages-last">
+                <div class="swiper-wrapper w-p-pages">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pics2.png" alt="image">
+                        <div class="last-content">
+                            <h3>Gray Jacket</h3>
+                            <h4>$55.00</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pics3.png" alt="image">
+                        <div class="last-content">
+                            <h3>Back Jacket</h3>
+                            <h4>$55.00</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pics4.png" alt="image">
+                        <div class="last-content">
+                            <h3>Blue Jacket</h3>
+                            <h4>$55.00</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pics5.png" alt="image">
+                        <div class="last-content">
+                            <h3>Red Jacket</h3>
+                            <h4>$55.00</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pics6.png" alt="image">
+                        <div class="last-content">
+                            <h3>Pink Jacket</h3>
+                            <h4>$55.00</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--- Close Coding P-Page Last Slider --->
+<!--- Start Coding Footer --->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="box">
+                <h3>Product purchase</h3>
+                <ul>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">New collection</a></li>
+                    <li><a href="#">T-shirt</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Customer services</h3>
+                <ul>
+                    <li><a href="#">Track orders</a></li>
+                    <li><a href="#">Answers to questions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact to store</a></li>
+                    <li><a href="#">About FOG brand</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="f-logo">
+                    <a href="#"><img src="./assets/images/f-logo.png" alt="f-logo"></a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</footer>
+<!--- Close Coding Footer--->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/javascript.js"></script> 
+</body>
+</html>

@@ -6,3 +6,267 @@
         margin: auto;
     }
 }
+/* Start Media Quries Laptop 1024px */
+@media screen and (max-width: 1024px) 
+{
+    .container-fluid{
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+    header {
+        display: none;
+    }
+    .hero-section .row .box .box-content h3{
+        font-size: 25px;
+    }
+    .section-one {
+        padding: 42px 0px 40px 0px;
+    }
+    .section-one .top-text h2 {
+        font-size: 40px;
+    }
+    .section-one .top-text a span {
+        font-size: 12px;
+    }
+    .section-one .top-text a {
+        width: 120px;
+        height: 38px;
+        grid-gap: 0px 8px;
+        padding: 8px;
+    }
+    .section-one .row {
+        grid-gap: 0px 46px;
+        padding-top: 30px;
+    }
+    .section-one .row .card {
+        padding: 15px 15px 14px 15px;
+    }
+    .section-one .row .card .card-content .left-text h4 {
+        font-size: 17px;
+    }
+    .section-one .row .card .card-content .left-text h5 {
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    .section-one .row .card .card-last h4 {
+        font-size: 18px;
+    }
+    .section-one .row .card .card-last a i {
+        font-size: 18px;
+    }
+    .section-one .row .card .card-last a {
+        padding: 8px;
+    }
+    .section-one .row .card .top-new span {
+        position: absolute;
+        top: -8px;
+        left: 240px;
+        padding: 2px 7px 2px 7px;
+        font-size: 14px;
+    }
+    .section-two {
+        padding: 28px 0px 100px 0px;
+    }
+    .section-two .card-slider {
+        padding: 24px 0px 20px 24px;
+        box-shadow: 0px 3px 4px 0px #d4d4d4;
+    }
+    .section-three .top-text h2 {
+        font-size: 40px;
+    }
+    .section-three .top-text a span {
+        font-size: 12px;
+    }
+    .section-three .top-text a {
+        width: 102px;
+        height: 38px;
+        display: flex;
+        grid-gap: 0px 8px;
+        padding: 8px;
+    }
+    .section-three .row {
+        grid-gap: 0px 45px;
+        padding-top: 43px;
+    }
+    .section-three .row .card .card-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .section-three .row .card .card-content .left-text h4 {
+        font-size: 17px;
+    }
+    .section-three .row .card .card-content .left-text h5 {
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    .section-three .row .card .card-last h4 {
+        font-size: 18px;
+    }
+    .section-three .row .card .card-last a i {
+        font-size: 18px;
+    }
+    .section-three .row .card .card-last a {
+        padding: 8px;
+    }
+    .section-three {
+        padding: 0px 0px 70px 0px;
+    }
+    .section-four {
+        padding: 78px 0px 100px 0px;
+    }
+    .section-four .top-text h2 {
+        font-size: 40px;
+    }
+    .section-four .top-text a span {
+        font-size: 12px;
+    }
+    .section-four .top-text a {
+        width: 120px;
+        height: 38px;
+        grid-gap: 0px 8px;
+        padding: 8px;
+    }
+    .section-four .row {
+        grid-gap: 0px 45px;
+        padding-top: 43px;
+    }
+    .section-four .row .card .card-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .section-four .row .card .card-content .left-text h4 {
+        font-size: 17px;
+    }
+    .section-four .row .card .card-content .left-text h5 {
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    .section-four .row .card .card-last h4 {
+        font-size: 18px;
+    }
+    .section-four .row .card .card-last a i {
+        font-size: 18px;
+    }
+    .section-four .row .card .card-last a {
+        padding: 8px;
+    }
+    .section-four {
+        padding: 68px 0px 90px 0px;
+    }
+    .section-five {
+        padding: 70px 0px 79px 0px;
+    }
+    .section-five .top-text h2 {
+        font-size: 40px;
+    }
+    .section-five .top-text a span {
+        font-size: 12px;
+    }
+    .section-five .top-text a {
+        width: 120px;
+        height: 38px;
+        grid-gap: 0px 8px;
+        padding: 8px;
+    }
+    .section-five .row {
+        grid-gap: 0px 45px;
+        padding-top: 43px;
+    }
+    .section-five .row .card .card-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .section-five .row .card .card-content .left-text h4 {
+        font-size: 17px;
+    }
+    .section-five .row .card .card-content .left-text h5 {
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    .section-five .row .card .card-last h4 {
+        font-size: 18px;
+    }
+    .section-five .row .card .card-last a i {
+        font-size: 18px;
+    }
+    .section-five .row .card .card-last a {
+        padding: 8px;
+    }
+    .section-six .six-main h2 span {
+        padding: 0px 15px;
+    }
+    .section-six .six-main h2 {
+        font-size: 35px;
+        position: relative;
+    }
+    .section-six .six-main {
+        padding-bottom: 77px;
+    }
+    .section-six .swiper .slider-rows {
+        padding: 74px 0px 68px 15px;
+        grid-gap: 15px;
+    }
+    .section-six .swiper .swiper-wrapper .swiperss-one img:first-child {
+        padding-bottom: 44px;
+    }
+    .section-six {
+        padding: 0px 0px 97px 0px;
+    }
+    footer {
+        padding: 73px 104px 70px 70px;
+    }
+    footer .row .box h3 {
+        font-size: 16px;;
+        padding-bottom: 2px;
+    }
+    footer .row .box ul li {
+        padding-bottom: 5px;
+    }
+    footer .row .box ul li a {
+        font-size: 15px;
+    }
+    footer .row .box .social ul {
+        grid-gap: 0px 10px;
+    }
+    footer .row .box .f-logo img{
+        width: 80px;
+    }
+    footer .row .box .social ul li a {
+        font-size: 16px;
+    }
+}
+/* Close Media Quries Laptop 1024px */
+/* Start Media Quries Tablet 768px */
+@media screen and (max-width: 768px) 
+{
+    .container-fluid{
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+}
+/* Close Media Quries Tablet 768px */
+
+
+
+
+
+/* Start Media Quries Mobile 575px */
+@media screen and (max-width: 575px) 
+{
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+}
+/* Close Media Quries Mobile 575px */
